@@ -17,7 +17,7 @@ header {
 }
 
 .logo img {
-    width: 40px; /* Tamaño del logo ajustado */
+    width: 10px; /* Tamaño del logo ajustado */
     height: auto; /* Mantener la proporción */
     margin-right: 10px;
 }
