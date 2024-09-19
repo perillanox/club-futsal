@@ -56,7 +56,7 @@ nav ul li:hover .dropdown {
 }
 
 .hero {
-    background-image: url('ruta-a-tu-imagen-de-fondo.jpg');
+    background-image: url('fondo.jpg');
     background-size: cover;
     color: white;
     text-align: center;
