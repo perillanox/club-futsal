@@ -2,13 +2,13 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #ffffff; /* Fondo blanco */
 }
 
 header {
     background-color: #004d00; /* Verde oscuro */
     padding: 20px;
     color: white;
-    position: relative;
 }
 
 .logo h1 {
@@ -18,16 +18,30 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
+    position: relative;
 }
 
 nav ul li {
     display: inline-block;
     margin-right: 20px;
+    position: relative;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+}
+
+nav ul .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #004d00;
+    padding: 10px;
+    z-index: 1;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
 }
 
 .equipo {
