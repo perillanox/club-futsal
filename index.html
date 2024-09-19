@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club de Futsal</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-menu-btn" onclick="toggleNav()">☰</div>
+        <nav id="navbar">
+            <img src="static/logo.png" alt="Logo" class="logo" onclick="showSection('home')">
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Inicio</a></li>
+                <li><a href="#" onclick="showSection('equipos')">Equipos</a></li>
+                <li><a href="#" onclick="showSection('calendario')">Calendario</a></li>
+                <li><a href="#" onclick="showSection('resultados')">Resultados</a></li>
+                <li><a href="#" onclick="showSection('noticias')">Noticias</a></li>
+                <li><a href="#" onclick="showSection('galeria')">Galería</a></li>
+                <li><a href="#" onclick="showSection('contacto')">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="active">
+            <h1>Bienvenido al Club de Futsal</h1>
+            <p>Últimas noticias y eventos.</p>
+        </section>
+
+        <section id="equipos">
+            <h2>Equipos</h2>
+            <p>Aquí encontrarás información sobre nuestros equipos senior y base.</p>
+        </section>
+
+        <section id="calendario">
+            <h2>Calendario</h2>
+            <p>Próximos partidos y eventos.</p>
+        </section>
+
+        <section id="resultados">
+            <h2>Resultados</h2>
+            <p>Resultados recientes de nuestros partidos.</p>
+        </section>
+
+        <section id="noticias">
+            <h2>Noticias</h2>
+            <p>Últimas actualizaciones del club.</p>
+        </section>
+
+        <section id="galeria">
+            <h2>Galería</h2>
+            <p>Imágenes de nuestros partidos y eventos.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Información para ponerte en contacto con nosotros.</p>
+        </section>
+    </main>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
