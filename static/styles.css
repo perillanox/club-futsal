@@ -11,8 +11,15 @@ header {
     color: white;
 }
 
-.logo h1 {
-    margin: 0;
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; /* Ajusta según sea necesario */
+    height: auto;
+    margin-right: 10px;
 }
 
 nav ul {
@@ -35,30 +42,28 @@ nav a {
 nav ul .dropdown {
     display: none;
     position: absolute;
-    background-color: #004d00;
+    background-color: #004d00; /* Verde oscuro */
     padding: 10px;
     z-index: 1;
+    min-width: 150px; /* Aumenta el tamaño del menú desplegable */
 }
 
 nav ul li:hover .dropdown {
     display: block;
 }
 
-.equipo {
-    cursor: pointer;
-    margin: 20px 0;
-    text-align: center;
-}
-
-.equipo img {
-    width: 200px; /* Ajusta según sea necesario */
-    height: auto;
-}
-
 .hero {
-    background-image: url('fondo.jpg');
+    background-image: url('static/fondo.jpg'); /* Imagen de fondo para la sección de inicio */
     background-size: cover;
     color: white;
     text-align: center;
     padding: 100px 20px;
+}
+
+.news {
+    padding: 20px;
+}
+
+h3 {
+    color: #004d00; /* Verde oscuro */
 }
