@@ -11,31 +11,31 @@
         <h1>Club de Futsal</h1>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#equipos">Equipos</a>
+                <li><a href="#" onclick="showSection('inicio')">Inicio</a></li>
+                <li><a href="#" onclick="showSection('equipos')">Equipos</a>
                     <ul>
-                        <li><a href="#equipo-senior">Equipo Senior</a></li>
-                        <li><a href="#equipo-base">Base</a></li>
+                        <li><a href="#" onclick="showSection('equipo-senior')">Equipo Senior</a></li>
+                        <li><a href="#" onclick="showSection('equipo-base')">Base</a></li>
                     </ul>
                 </li>
-                <li><a href="#calendario">Calendario</a></li>
-                <li><a href="#resultados">Resultados</a></li>
-                <li><a href="#noticias">Noticias</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#" onclick="showSection('calendario')">Calendario</a></li>
+                <li><a href="#" onclick="showSection('resultados')">Resultados</a></li>
+                <li><a href="#" onclick="showSection('noticias')">Noticias</a></li>
+                <li><a href="#" onclick="showSection('galeria')">Galería</a></li>
+                <li><a href="#" onclick="showSection('contacto')">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="inicio">
+        <section id="inicio" style="display:none;">
             <h2>Bienvenida</h2>
             <p>Últimas noticias y actualizaciones sobre el club.</p>
         </section>
 
-        <section id="equipos">
+        <section id="equipos" style="display:none;">
             <h2>Equipos</h2>
-            <div id="equipo-senior">
+            <div id="equipo-senior" style="display:none;">
                 <h3>Equipo Senior</h3>
                 <ul>
                     <li><a href="jugadores/jugador1.html">Jugador 1</a></li>
@@ -44,7 +44,7 @@
                 </ul>
             </div>
 
-            <div id="equipo-base">
+            <div id="equipo-base" style="display:none;">
                 <h3>Equipo Base</h3>
                 <ul>
                     <li><a href="#">Jugador Base 1</a></li>
@@ -53,27 +53,27 @@
             </div>
         </section>
 
-        <section id="calendario">
+        <section id="calendario" style="display:none;">
             <h2>Calendario</h2>
             <p>Próximos partidos y eventos.</p>
         </section>
 
-        <section id="resultados">
+        <section id="resultados" style="display:none;">
             <h2>Resultados</h2>
             <p>Resultados recientes de los partidos.</p>
         </section>
 
-        <section id="noticias">
+        <section id="noticias" style="display:none;">
             <h2>Noticias</h2>
             <p>Últimas actualizaciones y artículos relevantes.</p>
         </section>
 
-        <section id="galeria">
+        <section id="galeria" style="display:none;">
             <h2>Galería</h2>
             <p>Imágenes de partidos y eventos del club.</p>
         </section>
 
-        <section id="contacto">
+        <section id="contacto" style="display:none;">
             <h2>Contacto</h2>
             <p>Información para que los aficionados se pongan en contacto.</p>
         </section>
