@@ -1,8 +1,9 @@
 body {
-    font-family: 'Arial', sans-serif; /* Cambia a una fuente moderna */
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
     margin: 0;
     padding: 0;
     background-color: #ffffff; /* Fondo blanco */
+    color: #333; /* Texto gris oscuro */
 }
 
 header {
@@ -33,6 +34,11 @@ nav ul li {
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ccc; /* Color de texto al pasar el cursor */
 }
 
 .dropdown-menu {
@@ -42,6 +48,7 @@ nav ul li a {
     list-style: none;
     padding: 0;
     margin: 0;
+    z-index: 10; /* Asegura que el menú se muestre encima de otros elementos */
 }
 
 nav ul li:hover .dropdown-menu {
@@ -52,12 +59,13 @@ nav ul li:hover .dropdown-menu {
     background-image: url('static/fondo.jpg'); /* Imagen de fondo */
     height: 400px; /* Altura del héroe */
     background-size: cover;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white;
+    padding: 20px;
 }
 
 main {
