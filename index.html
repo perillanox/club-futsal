@@ -3,123 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="static/styles.css">
     <title>Club de Futsal</title>
+    <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
     <header>
-        <div class="logo" onclick="showSection('home')">
-            <img src="static/logo.png" alt="Logo del Club">
-        </div>
+        <h1>Club de Futsal</h1>
         <nav>
             <ul>
-                <li><a href="#" onclick="showSection('home')">Inicio</a></li>
-                <li>
-                    <a href="#" class="dropdown">Equipos</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#" onclick="showSection('equipo_senior')">Equipo Senior</a></li>
-                        <li><a href="#" onclick="showSection('equipo_base')">Equipo Base</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#equipos">Equipos</a>
+                    <ul>
+                        <li><a href="#equipo-senior">Equipo Senior</a></li>
+                        <li><a href="#equipo-base">Base</a></li>
                     </ul>
                 </li>
-                <li><a href="#" onclick="showSection('calendario')">Calendario</a></li>
-                <li><a href="#" onclick="showSection('resultados')">Resultados</a></li>
-                <li><a href="#" onclick="showSection('noticias')">Noticias</a></li>
-                <li><a href="#" onclick="showSection('galeria')">Galería</a></li>
-                <li><a href="#" onclick="showSection('contacto')">Contacto</a></li>
+                <li><a href="#calendario">Calendario</a></li>
+                <li><a href="#resultados">Resultados</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="active">
-            <div class="hero">
-                <h1>Bienvenido al Club de Futsal</h1>
-                <p>Últimas noticias y eventos destacados.</p>
-            </div>
+        <section id="inicio">
+            <h2>Bienvenida</h2>
+            <p>Últimas noticias y actualizaciones sobre el club.</p>
         </section>
 
-        <section id="equipo_senior" class="hidden">
-            <h2>Equipo Senior</h2>
-            <nav>
+        <section id="equipos">
+            <h2>Equipos</h2>
+            <div id="equipo-senior">
+                <h3>Equipo Senior</h3>
                 <ul>
-                    <li><a href="#" onclick="showSubsection('senior_plantilla')">Plantilla</a></li>
-                    <li><a href="#" onclick="showSubsection('senior_calendario')">Calendario</a></li>
-                    <li><a href="#" onclick="showSubsection('senior_resultados')">Resultados</a></li>
-                    <li><a href="#" onclick="showSubsection('senior_galeria')">Galería</a></li>
-                    <li><a href="#" onclick="showSubsection('senior_noticias')">Noticias</a></li>
+                    <li><a href="jugadores/jugador1.html">Jugador 1</a></li>
+                    <li><a href="jugadores/jugador2.html">Jugador 2</a></li>
+                    <li><a href="jugadores/jugador3.html">Jugador 3</a></li>
                 </ul>
-            </nav>
-            <div id="senior_plantilla" class="subsection active">
-                <p>Detalles sobre la plantilla del equipo senior.</p>
             </div>
-            <div id="senior_calendario" class="subsection hidden">
-                <p>Calendario del equipo senior.</p>
-            </div>
-            <div id="senior_resultados" class="subsection hidden">
-                <p>Resultados del equipo senior.</p>
-            </div>
-            <div id="senior_galeria" class="subsection hidden">
-                <p>Galería del equipo senior.</p>
-            </div>
-            <div id="senior_noticias" class="subsection hidden">
-                <p>Noticias del equipo senior.</p>
-            </div>
-        </section>
 
-        <section id="equipo_base" class="hidden">
-            <h2>Equipo Base</h2>
-            <nav>
+            <div id="equipo-base">
+                <h3>Equipo Base</h3>
                 <ul>
-                    <li><a href="#" onclick="showSubsection('base_plantilla')">Plantilla</a></li>
-                    <li><a href="#" onclick="showSubsection('base_calendario')">Calendario</a></li>
-                    <li><a href="#" onclick="showSubsection('base_resultados')">Resultados</a></li>
-                    <li><a href="#" onclick="showSubsection('base_galeria')">Galería</a></li>
-                    <li><a href="#" onclick="showSubsection('base_noticias')">Noticias</a></li>
+                    <li><a href="#">Jugador Base 1</a></li>
+                    <li><a href="#">Jugador Base 2</a></li>
                 </ul>
-            </nav>
-            <div id="base_plantilla" class="subsection active">
-                <p>Detalles sobre la plantilla del equipo base.</p>
-            </div>
-            <div id="base_calendario" class="subsection hidden">
-                <p>Calendario del equipo base.</p>
-            </div>
-            <div id="base_resultados" class="subsection hidden">
-                <p>Resultados del equipo base.</p>
-            </div>
-            <div id="base_galeria" class="subsection hidden">
-                <p>Galería del equipo base.</p>
-            </div>
-            <div id="base_noticias" class="subsection hidden">
-                <p>Noticias del equipo base.</p>
             </div>
         </section>
 
-        <section id="calendario" class="hidden">
+        <section id="calendario">
             <h2>Calendario</h2>
-            <p>Eventos y próximos partidos del club.</p>
+            <p>Próximos partidos y eventos.</p>
         </section>
 
-        <section id="resultados" class="hidden">
+        <section id="resultados">
             <h2>Resultados</h2>
-            <p>Resultados recientes del club.</p>
+            <p>Resultados recientes de los partidos.</p>
         </section>
 
-        <section id="noticias" class="hidden">
+        <section id="noticias">
             <h2>Noticias</h2>
-            <p>Últimas actualizaciones del club.</p>
+            <p>Últimas actualizaciones y artículos relevantes.</p>
         </section>
 
-        <section id="galeria" class="hidden">
+        <section id="galeria">
             <h2>Galería</h2>
-            <p>Imágenes de nuestros partidos y eventos.</p>
+            <p>Imágenes de partidos y eventos del club.</p>
         </section>
 
-        <section id="contacto" class="hidden">
+        <section id="contacto">
             <h2>Contacto</h2>
-            <p>Información de contacto: email, teléfono, etc.</p>
+            <p>Información para que los aficionados se pongan en contacto.</p>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2024 Club de Futsal. Todos los derechos reservados.</p>
+    </footer>
 
     <script src="static/script.js"></script>
 </body>
