@@ -8,16 +8,13 @@
 </head>
 <body>
     <header>
-        <h1>Club de Futsal</h1>
+        <div class="logo">
+            <h1>Club de Futsal</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#" onclick="showSection('inicio')">Inicio</a></li>
-                <li><a href="#" onclick="showSection('equipos')">Equipos</a>
-                    <ul>
-                        <li><a href="#" onclick="showSection('equipo-senior')">Equipo Senior</a></li>
-                        <li><a href="#" onclick="showSection('equipo-base')">Base</a></li>
-                    </ul>
-                </li>
+                <li><a href="#" onclick="showSection('equipos')">Equipos</a></li>
                 <li><a href="#" onclick="showSection('calendario')">Calendario</a></li>
                 <li><a href="#" onclick="showSection('resultados')">Resultados</a></li>
                 <li><a href="#" onclick="showSection('noticias')">Noticias</a></li>
@@ -28,28 +25,30 @@
     </header>
 
     <main>
-        <section id="inicio" style="display:none;">
-            <h2>Bienvenida</h2>
-            <p>Últimas noticias y actualizaciones sobre el club.</p>
+        <section id="inicio" style="display:block;">
+            <div class="hero">
+                <h2>Bienvenido al Club de Futsal</h2>
+                <p>Últimas noticias y actualizaciones sobre el club.</p>
+            </div>
+            <div class="news">
+                <h3>Últimas Noticias</h3>
+                <ul>
+                    <li><strong>Noticia 1:</strong> Información sobre el próximo partido.</li>
+                    <li><strong>Noticia 2:</strong> Resultados del último encuentro.</li>
+                    <li><strong>Noticia 3:</strong> Actualizaciones sobre la plantilla.</li>
+                </ul>
+            </div>
         </section>
 
         <section id="equipos" style="display:none;">
             <h2>Equipos</h2>
-            <div id="equipo-senior" style="display:none;">
+            <div class="equipo" onclick="showSection('equipo-senior')">
+                <img src="static/equipo-senior.jpg" alt="Equipo Senior">
                 <h3>Equipo Senior</h3>
-                <ul>
-                    <li><a href="jugadores/jugador1.html">Jugador 1</a></li>
-                    <li><a href="jugadores/jugador2.html">Jugador 2</a></li>
-                    <li><a href="jugadores/jugador3.html">Jugador 3</a></li>
-                </ul>
             </div>
-
-            <div id="equipo-base" style="display:none;">
+            <div class="equipo" onclick="showSection('equipo-base')">
+                <img src="static/equipo-base.jpg" alt="Equipo Base">
                 <h3>Equipo Base</h3>
-                <ul>
-                    <li><a href="#">Jugador Base 1</a></li>
-                    <li><a href="#">Jugador Base 2</a></li>
-                </ul>
             </div>
         </section>
 
