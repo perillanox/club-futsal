@@ -14,7 +14,13 @@
         <nav>
             <ul>
                 <li><a href="#" onclick="showSection('inicio')">Inicio</a></li>
-                <li><a href="#" onclick="showSection('equipos')">Equipos</a></li>
+                <li>
+                    <a href="#" onclick="showSection('equipos')">Equipos</a>
+                    <ul class="dropdown">
+                        <li><a href="#" onclick="showSection('equipo-senior')">Equipo Senior</a></li>
+                        <li><a href="#" onclick="showSection('equipo-base')">Equipo Base</a></li>
+                    </ul>
+                </li>
                 <li><a href="#" onclick="showSection('calendario')">Calendario</a></li>
                 <li><a href="#" onclick="showSection('resultados')">Resultados</a></li>
                 <li><a href="#" onclick="showSection('noticias')">Noticias</a></li>
@@ -50,6 +56,22 @@
                 <img src="static/equipo-base.jpg" alt="Equipo Base">
                 <h3>Equipo Base</h3>
             </div>
+        </section>
+
+        <section id="equipo-senior" style="display:none;">
+            <h2>Equipo Senior</h2>
+            <p>Detalles sobre el equipo senior, jugadores, calendario y resultados.</p>
+            <button onclick="showPlayers('senior')">Ver Plantilla</button>
+            <button onclick="showSection('calendario')">Ver Calendario</button>
+            <button onclick="showSection('resultados')">Ver Resultados</button>
+        </section>
+
+        <section id="equipo-base" style="display:none;">
+            <h2>Equipo Base</h2>
+            <p>Detalles sobre el equipo base, jugadores, calendario y resultados.</p>
+            <button onclick="showPlayers('base')">Ver Plantilla</button>
+            <button onclick="showSection('calendario')">Ver Calendario</button>
+            <button onclick="showSection('resultados')">Ver Resultados</button>
         </section>
 
         <section id="calendario" style="display:none;">
