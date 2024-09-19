@@ -1,17 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
+    font-family: 'Arial', sans-serif;
     margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: #004d00; /* Verde oscuro */
-    padding: 10px;
+    padding: 20px;
+    color: white;
+    position: relative;
 }
 
-header h1 {
-    color: white;
+.logo h1 {
+    margin: 0;
 }
 
 nav ul {
@@ -24,28 +25,26 @@ nav ul li {
     margin-right: 20px;
 }
 
-nav ul li ul {
-    display: none; /* Ocultar submenú por defecto */
-}
-
-nav ul li:hover ul {
-    display: block; /* Mostrar submenú al pasar el ratón */
-    position: absolute;
-    background-color: #004d00; /* Verde oscuro */
-}
-
-nav ul li ul li {
-    display: block;
-}
-
 nav a {
     color: white;
     text-decoration: none;
 }
 
-footer {
+.equipo {
+    cursor: pointer;
+    margin: 20px 0;
     text-align: center;
-    padding: 10px;
-    background-color: #004d00; /* Verde oscuro */
+}
+
+.equipo img {
+    width: 200px; /* Ajusta según sea necesario */
+    height: auto;
+}
+
+.hero {
+    background-image: url('ruta-a-tu-imagen-de-fondo.jpg');
+    background-size: cover;
     color: white;
+    text-align: center;
+    padding: 100px 20px;
 }
