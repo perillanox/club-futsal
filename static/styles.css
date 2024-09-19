@@ -17,15 +17,21 @@ header {
 }
 
 .logo img {
-    width: 50px; /* Ajusta según sea necesario */
-    height: auto;
+    width: 40px; /* Tamaño del logo ajustado */
+    height: auto; /* Mantener la proporción */
     margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Espacio entre el logo y la navegación */
+    align-items: center;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    position: relative;
+    margin: 0;
 }
 
 nav ul li {
@@ -37,6 +43,7 @@ nav ul li {
 nav a {
     color: white;
     text-decoration: none;
+    font-size: 16px; /* Tamaño de fuente ajustado */
 }
 
 nav ul .dropdown {
