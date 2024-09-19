@@ -14,7 +14,13 @@
         <nav>
             <ul>
                 <li><a href="#" onclick="showSection('home')">Inicio</a></li>
-                <li><a href="#" onclick="showSection('equipos')">Equipos</a></li>
+                <li>
+                    <a href="#" class="dropdown">Equipos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onclick="showSection('equipo_senior')">Equipo Senior</a></li>
+                        <li><a href="#" onclick="showSection('equipo_base')">Equipo Base</a></li>
+                    </ul>
+                </li>
                 <li><a href="#" onclick="showSection('calendario')">Calendario</a></li>
                 <li><a href="#" onclick="showSection('resultados')">Resultados</a></li>
                 <li><a href="#" onclick="showSection('noticias')">Noticias</a></li>
@@ -32,47 +38,83 @@
             </div>
         </section>
 
-        <section id="equipos">
-            <h2>Equipos</h2>
-            <div class="team">
-                <img src="static/equipo_senior.jpg" alt="Equipo Senior">
-                <h3>Equipo Senior</h3>
-                <p>Descripción del equipo senior.</p>
+        <section id="equipo_senior" class="hidden">
+            <h2>Equipo Senior</h2>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showSubsection('senior_plantilla')">Plantilla</a></li>
+                    <li><a href="#" onclick="showSubsection('senior_calendario')">Calendario</a></li>
+                    <li><a href="#" onclick="showSubsection('senior_resultados')">Resultados</a></li>
+                    <li><a href="#" onclick="showSubsection('senior_galeria')">Galería</a></li>
+                    <li><a href="#" onclick="showSubsection('senior_noticias')">Noticias</a></li>
+                </ul>
+            </nav>
+            <div id="senior_plantilla" class="subsection active">
+                <p>Detalles sobre la plantilla del equipo senior.</p>
             </div>
-            <div class="team">
-                <img src="static/equipo_base.jpg" alt="Equipo Base">
-                <h3>Equipo Base</h3>
-                <p>Descripción del equipo base.</p>
+            <div id="senior_calendario" class="subsection hidden">
+                <p>Calendario del equipo senior.</p>
+            </div>
+            <div id="senior_resultados" class="subsection hidden">
+                <p>Resultados del equipo senior.</p>
+            </div>
+            <div id="senior_galeria" class="subsection hidden">
+                <p>Galería del equipo senior.</p>
+            </div>
+            <div id="senior_noticias" class="subsection hidden">
+                <p>Noticias del equipo senior.</p>
             </div>
         </section>
 
-        <section id="calendario">
+        <section id="equipo_base" class="hidden">
+            <h2>Equipo Base</h2>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showSubsection('base_plantilla')">Plantilla</a></li>
+                    <li><a href="#" onclick="showSubsection('base_calendario')">Calendario</a></li>
+                    <li><a href="#" onclick="showSubsection('base_resultados')">Resultados</a></li>
+                    <li><a href="#" onclick="showSubsection('base_galeria')">Galería</a></li>
+                    <li><a href="#" onclick="showSubsection('base_noticias')">Noticias</a></li>
+                </ul>
+            </nav>
+            <div id="base_plantilla" class="subsection active">
+                <p>Detalles sobre la plantilla del equipo base.</p>
+            </div>
+            <div id="base_calendario" class="subsection hidden">
+                <p>Calendario del equipo base.</p>
+            </div>
+            <div id="base_resultados" class="subsection hidden">
+                <p>Resultados del equipo base.</p>
+            </div>
+            <div id="base_galeria" class="subsection hidden">
+                <p>Galería del equipo base.</p>
+            </div>
+            <div id="base_noticias" class="subsection hidden">
+                <p>Noticias del equipo base.</p>
+            </div>
+        </section>
+
+        <section id="calendario" class="hidden">
             <h2>Calendario</h2>
-            <ul>
-                <li>Partido 1 - Fecha y Hora</li>
-                <li>Partido 2 - Fecha y Hora</li>
-            </ul>
+            <p>Eventos y próximos partidos del club.</p>
         </section>
 
-        <section id="resultados">
+        <section id="resultados" class="hidden">
             <h2>Resultados</h2>
-            <ul>
-                <li>Partido 1 - Resultado</li>
-                <li>Partido 2 - Resultado</li>
-            </ul>
+            <p>Resultados recientes del club.</p>
         </section>
 
-        <section id="noticias">
+        <section id="noticias" class="hidden">
             <h2>Noticias</h2>
             <p>Últimas actualizaciones del club.</p>
         </section>
 
-        <section id="galeria">
+        <section id="galeria" class="hidden">
             <h2>Galería</h2>
             <p>Imágenes de nuestros partidos y eventos.</p>
         </section>
 
-        <section id="contacto">
+        <section id="contacto" class="hidden">
             <h2>Contacto</h2>
             <p>Información de contacto: email, teléfono, etc.</p>
         </section>
