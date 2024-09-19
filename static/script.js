@@ -11,3 +11,8 @@ function showSection(sectionId) {
         selectedSection.style.display = 'block';
     }
 }
+
+function showPlayers(team) {
+    // Aquí podrías agregar la lógica para mostrar la plantilla del equipo seleccionado
+    alert("Mostrar plantilla del " + team);
+}
