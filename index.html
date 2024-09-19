@@ -8,9 +8,10 @@
 </head>
 <body>
     <header>
-        <div class="nav-menu-btn" onclick="toggleNav()">☰</div>
-        <nav id="navbar">
-            <img src="static/logo.png" alt="Logo" class="logo" onclick="showSection('home')">
+        <div class="logo" onclick="showSection('home')">
+            <img src="static/logo.png" alt="Logo del Club">
+        </div>
+        <nav>
             <ul>
                 <li><a href="#" onclick="showSection('home')">Inicio</a></li>
                 <li><a href="#" onclick="showSection('equipos')">Equipos</a></li>
@@ -25,23 +26,40 @@
 
     <main>
         <section id="home" class="active">
-            <h1>Bienvenido al Club de Futsal</h1>
-            <p>Últimas noticias y eventos.</p>
+            <div class="hero">
+                <h1>Bienvenido al Club de Futsal</h1>
+                <p>Últimas noticias y eventos destacados.</p>
+            </div>
         </section>
 
         <section id="equipos">
             <h2>Equipos</h2>
-            <p>Aquí encontrarás información sobre nuestros equipos senior y base.</p>
+            <div class="team">
+                <img src="static/equipo_senior.jpg" alt="Equipo Senior">
+                <h3>Equipo Senior</h3>
+                <p>Descripción del equipo senior.</p>
+            </div>
+            <div class="team">
+                <img src="static/equipo_base.jpg" alt="Equipo Base">
+                <h3>Equipo Base</h3>
+                <p>Descripción del equipo base.</p>
+            </div>
         </section>
 
         <section id="calendario">
             <h2>Calendario</h2>
-            <p>Próximos partidos y eventos.</p>
+            <ul>
+                <li>Partido 1 - Fecha y Hora</li>
+                <li>Partido 2 - Fecha y Hora</li>
+            </ul>
         </section>
 
         <section id="resultados">
             <h2>Resultados</h2>
-            <p>Resultados recientes de nuestros partidos.</p>
+            <ul>
+                <li>Partido 1 - Resultado</li>
+                <li>Partido 2 - Resultado</li>
+            </ul>
         </section>
 
         <section id="noticias">
@@ -56,7 +74,7 @@
 
         <section id="contacto">
             <h2>Contacto</h2>
-            <p>Información para ponerte en contacto con nosotros.</p>
+            <p>Información de contacto: email, teléfono, etc.</p>
         </section>
     </main>
 
