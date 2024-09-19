@@ -1,21 +1,12 @@
-function showSection(sectionId) {
-    const sections = document.querySelectorAll('main > section');
-    sections.forEach(section => {
-        section.classList.remove('active');
-    });
-    document.getElementById(sectionId).classList.add('active');
-    
-    // Reset subsections when navigating to a new section
-    const subsections = document.querySelectorAll('.subsection');
-    subsections.forEach(subsection => {
-        subsection.classList.remove('active');
-    });
-}
+// Efecto de resaltar los enlaces del menú al pasar el cursor
+const menuItems = document.querySelectorAll('nav a');
 
-function showSubsection(subsectionId) {
-    const subsections = document.querySelectorAll('.subsection');
-    subsections.forEach(subsection => {
-        subsection.classList.remove('active');
+menuItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        item.style.color = '#80ff80'; // Cambia a verde claro
     });
-    document.getElementById(subsectionId).classList.add('active');
-}
+
+    item.addEventListener('mouseleave', () => {
+        item.style.color = 'white'; // Vuelve al blanco
+    });
+});
