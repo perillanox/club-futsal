@@ -6,15 +6,16 @@ body {
 }
 
 header {
-    background-color: #2C3E50;
-    padding: 1em 0;
-    position: relative;
-}
-
-nav {
+    background-color: #c8102e;
+    padding: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header .logo img {
+    height: 50px; /* Ajusta el tamaño del logo */
+    cursor: pointer;
 }
 
 nav ul {
@@ -29,15 +30,20 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ECF0F1;
+    color: #ffffff;
     text-decoration: none;
 }
 
-.nav-menu-btn {
-    display: none;
-    font-size: 2em;
-    color: #ECF0F1;
-    cursor: pointer;
+.hero {
+    background-image: url('static/fondo.jpg'); /* Imagen de fondo */
+    height: 400px; /* Altura del héroe */
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 main {
@@ -45,24 +51,31 @@ main {
 }
 
 section {
-    display: none;
+    margin: 20px 0;
 }
 
-section.active {
-    display: block;
+.team {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.team img {
+    height: 100px; /* Ajusta el tamaño de las imágenes de equipo */
+    margin-right: 20px;
 }
 
 @media (max-width: 768px) {
     nav ul {
-        display: none;
         flex-direction: column;
     }
 
-    nav ul.active {
-        display: flex;
+    .team {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .nav-menu-btn {
-        display: block;
+    .team img {
+        margin-bottom: 10px;
     }
 }
